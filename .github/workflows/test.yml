@@ -4,13 +4,9 @@ on:
     - cron: '* * * * *'
 
 jobs:
-  job1:
-    name: 'Checkout'
+  Nihao:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-    
-  job2:
-    name: 'Test task'
-    shell: bash
-    run: echo '===== 114514 ====='
+      - run: echo "===== 114514 ====="
+        uses: actions/checkout@v4
+      - run: bash '~/test.sh'
