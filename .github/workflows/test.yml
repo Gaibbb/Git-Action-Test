@@ -7,11 +7,7 @@ jobs:
   Nihao:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Echo 114514'
-        run: echo "===== 114514 ====="
-
-      - name: 'Checkout'
+      - run: echo "===== 114514 ====="
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: 'Run script'
-        run: bash '~/test.sh'
+      - run: bash "~/test.sh"
