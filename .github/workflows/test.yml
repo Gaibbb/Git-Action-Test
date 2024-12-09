@@ -1,8 +1,5 @@
 name: Test Action
-on:
-  schedule:
-    - cron: '* * * * *'
-
+on: [push]
 jobs:
   Nihao:
     runs-on: ubuntu-latest
