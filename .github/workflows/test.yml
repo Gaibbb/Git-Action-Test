@@ -1,0 +1,17 @@
+name: Test Action
+on:
+  schedule:
+    - cron: '* * * * *'
+
+jobs:
+  job1:
+    name: 'Checkout'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+    
+  job2:
+    name: 'Test task'
+    shell: bash
+    run: |
+      echo '===== 114514 ====='
