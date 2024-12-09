@@ -13,5 +13,4 @@ jobs:
   job2:
     name: 'Test task'
     shell: bash
-    run: |
-      echo '===== 114514 ====='
+    run: echo '===== 114514 ====='
