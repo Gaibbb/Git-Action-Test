@@ -7,4 +7,5 @@ jobs:
       - run: echo "===== 114514 ====="
       - name: Checkout
         uses: actions/checkout@v4
-      - run: bash "~/test.sh"
+      - run: bash pwd
+      - run: bash "./test.sh"
