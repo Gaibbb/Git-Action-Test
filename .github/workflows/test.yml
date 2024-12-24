@@ -1,7 +1,11 @@
 name: Test Action
-on: [push]
-jobs:
-  Nihao:
+on: 
+  push:
+  workflow_dispatch:
+hosts: all
+serial: 1
+tasks:
+  - name: Nihao:
     runs-on: [Linux]
     steps:
       - run: echo "===== 114514 ====="
@@ -18,7 +22,3 @@ jobs:
         run: |
           export PATH=$PATH:/usr/local/py3.11/bin
           setsid sh -c 'ansible-playbook -b playbook.yml -i hosts --extra-vars "ansible_user=root"'
-
-      - name: 'Sleep for a while'
-        pause:
-          seconds: 30
