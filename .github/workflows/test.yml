@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 hosts: all
 serial: 1
-tasks:
-  - name: Nihao:
+jobs:
+  Nihao:
     runs-on: [Linux]
     steps:
       - run: echo "===== 114514 ====="
