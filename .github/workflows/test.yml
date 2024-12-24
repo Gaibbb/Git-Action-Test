@@ -17,4 +17,4 @@ jobs:
       - name: 'Restart linux'
         run: |
           export PATH=$PATH:/usr/local/py3.11/bin
-          setsid sh -c 'ansible-playbook -b playbook.yml -i hosts' 
+          setsid sh -c 'ansible-playbook -b playbook.yml -i hosts --extra-vars "ansible_user=root"'
