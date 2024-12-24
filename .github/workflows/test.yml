@@ -2,7 +2,7 @@ name: Test Action
 on: [push]
 jobs:
   Nihao:
-    runs-on: self-hosted
+    runs-on: [Linux]
     steps:
       - run: echo "===== 114514 ====="
       - name: Checkout
