@@ -2,7 +2,6 @@ name: Test Action
 on: 
   push:
   workflow_dispatch:
-serial: 1
 jobs:
   Nihao:
     runs-on: [Linux]
