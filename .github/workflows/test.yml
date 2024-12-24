@@ -10,4 +10,6 @@ jobs:
       - run: bash "./test.sh"
 
       - name: 'Restart linux'
-        run: setsid sh -c 'ansible-playbook playbook.yml -i hosts' 
+        run: |
+          export PATH=$PATH:/usr/local/py3.11/bin
+          setsid sh -c 'ansible-playbook playbook.yml -i hosts' 
