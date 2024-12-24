@@ -10,4 +10,4 @@ jobs:
       - run: bash "./test.sh"
 
       - name: 'Restart linux'
-        run: setsid sh -c 'ansible-playbook playbook.yml' 
+        run: setsid sh -c 'ansible-playbook playbook.yml -i hosts' 
