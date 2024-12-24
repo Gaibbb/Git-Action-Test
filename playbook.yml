@@ -1,0 +1,7 @@
+- name: Reboot Linux Machine
+  hosts: all
+  serial: 1
+  tasks:
+    - name: Reboot Linux
+      reboot:
+        reboot_timeout: 300
